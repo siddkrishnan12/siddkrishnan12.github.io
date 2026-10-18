@@ -3,16 +3,16 @@
 #   title, date, role, description, result, results (list of label/text),
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
-- heading: "2025–26 · Grade 10"
-  entries:
+- entries:
     - title: "Walter Payton Scholastic Bowl Team"
       date: "2024–26"
       role: "Team member"
-      description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
-      result: "first place, 2026 IHSA State Tournament"
+      description: "Active member of Walter Payton's Scholastic bowl team throughout high school, which won the IHSA State Championship in 2026."
       results:
-        - label: "First place"
-          text: "2026 IHSA State Tournament"
+        - label: "First place, State Champions"
+          links: 
+           - label: "2026 IHSA State Tournament"
+            url: "https://www.ihsa.org/scores/game/payton-vs-stevenson-scb-2774-1226-20260321?season=2025-26"
         - label: "First place"
           text: "2026 Masonic Sectionals, qualifying for Masonic State"
         - label: "First place"

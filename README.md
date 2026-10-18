@@ -25,6 +25,42 @@ This repository holds Siddharth's portfolio site. GitHub Pages builds and hosts 
 
 A different repository name also works, but then the site lives at `https://<username>.github.io/<repository-name>` and `_config.yml` needs `baseurl: "/<repository-name>"`.
 
+## Optional: preview changes on your computer first
+
+Editing on github.com publishes each change right away. To check changes privately before they go online, run the site on your own computer.
+
+### One-time setup (Mac, about 15 minutes)
+
+The Ruby that ships with macOS is too old for Jekyll, so install a current one with Homebrew.
+
+1. Open **Terminal**.
+2. If `brew --version` prints an error, install Homebrew with the command shown on **brew.sh**.
+3. Install Ruby and put it on the path:
+   ```bash
+   brew install ruby
+   echo 'export PATH="$(brew --prefix ruby)/bin:$PATH"' >> ~/.zshrc
+   ```
+   Close Terminal and open a new window. Then `ruby -v` should print version 3 or higher.
+4. Copy the site to the computer. The simplest way is **GitHub Desktop** (desktop.github.com): sign in, choose **File** → **Clone repository**, and pick `<username>.github.io`.
+5. In Terminal, go to the cloned folder and install the site's tools:
+   ```bash
+   cd ~/Documents/GitHub/<username>.github.io
+   bundle install
+   ```
+
+On Windows, install Ruby with the **Ruby+Devkit** download from rubyinstaller.org, then continue from step 4 in a new Command Prompt.
+
+### Each time
+
+1. In Terminal, from the site folder, run:
+   ```bash
+   bundle exec jekyll serve --livereload
+   ```
+2. Open **http://localhost:4000** in a browser.
+3. Edit files in any text editor (VS Code works well). The browser refreshes on each save. A typo in a `_data` file prints an error in Terminal instead.
+4. Press **Ctrl+C** in Terminal to stop the preview.
+5. In GitHub Desktop, write a short summary (for example "Add Desert Winds recording"), click **Commit to main**, then **Push origin**. The live site updates in about a minute.
+
 ## Part 2. Add or change an entry (about 5 minutes)
 
 Each page reads from one file:
@@ -65,7 +101,13 @@ Only `title` is required; delete any line he doesn't need.
 
 - **youtube**: the code after `v=` in a YouTube link. The page shows a player plus a "Watch on YouTube" link.
 - **image**, **audio**, **score_pdf**: upload the file first (see below), then enter its path.
-- **results**: a list of placements, as in the Scholastic Bowl entry in `academics.yml`.
+- **results**: a list of placements, as in the Scholastic Bowl entry in `academics.yml`. Add a `url:` line under a placement's `text:` (same indentation) to link that placement to its results page:
+  ```yaml
+        results:
+          - label: "First place"
+            text: "2026 IHSA State Tournament"
+            url: "https://www.ihsa.org/..."
+  ```
 - **description**: `*text*` shows as italics.
 
 A new school year gets a new block at the top of the file:
@@ -92,11 +134,13 @@ If an edit breaks the site, the **Actions** tab shows a red ✗ with the error, 
 
 Keep file names lowercase with hyphens, such as `balkan-tour.jpg`. Resize photos to about 1600 pixels wide. GitHub accepts files up to 25 MB through the browser, so long recordings belong on YouTube (as **Unlisted**).
 
+**Arts playlist:** create a YouTube playlist (set to Unlisted or Public), copy the code after `list=` in its link, and paste it into `playlist: ""` in `arts.md`. A player for the whole playlist then appears at the top of the Arts page. Any other page can take a `playlist:` line the same way.
+
 **Home page photos:** set `headshot`, `banner_image`, and each highlight's `image` in `_data/profile.yml`.
 
 ## Part 4. Show the hidden pages
 
-Projects & Research, Service & Leadership, and Resume stay out of the menu until they have content. To show one, change its `show: false` to `show: true` in `_data/navigation.yml`.
+Projects & Research and Resume stay out of the menu until they have content. To show one, change its `show: false` to `show: true` in `_data/navigation.yml`.
 
 For the resume, upload a PDF to `assets/files`, set `resume_pdf: "/assets/files/resume.pdf"` in `_data/profile.yml`, and show the Resume page.
 

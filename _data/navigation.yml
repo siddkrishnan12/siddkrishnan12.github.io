@@ -14,7 +14,7 @@
   show: true
 - title: "Service & Leadership"
   url: "/service/"
-  show: false
+  show: true
 - title: "Resume"
   url: "/resume/"
   show: false

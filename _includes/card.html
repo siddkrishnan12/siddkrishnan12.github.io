@@ -1,55 +1,20 @@
-{%- assign e = include.entry -%}
-{%- assign has_media = false -%}
-{%- if e.youtube or e.audio or e.score_pdf -%}{%- assign has_media = true -%}{%- endif -%}
-<article class="card{% if has_media %} media{% elsif e.image %} with-image{% endif %}">
-  {%- if has_media %}
-  <div class="media-stack">
-    {%- if e.youtube %}
-    <div class="video">
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ e.youtube }}" title="{{ e.title | escape }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-    </div>
-    {%- endif %}
-    {%- if e.audio %}
-    <audio controls preload="none" src="{{ e.audio | relative_url }}"></audio>
-    {%- endif %}
-    {%- if e.score_pdf %}
-    <a class="score-link" href="{{ e.score_pdf | relative_url }}">View the score (PDF)</a>
-    {%- endif %}
-  </div>
-  {%- elsif e.image %}
-  <img class="card-img" src="{{ e.image | relative_url }}" alt="{{ e.image_alt | default: e.title | escape }}" loading="lazy">
-  {%- endif %}
-  <div class="card-body">
-    <h3>{{ e.title }}</h3>
-    {%- if e.date or e.role %}
-    <p class="meta">{{ e.date }}{% if e.date and e.role %} · {% endif %}{{ e.role }}</p>
-    {%- endif %}
-    {%- if e.description %}
-    {{ e.description | markdownify }}
-    {%- endif %}
-    {%- if e.result %}
-    <p class="result"><strong>Result:</strong> {{ e.result }}</p>
-    {%- endif %}
-    {%- if e.results %}
-    <ul class="tally">
-      {%- for r in e.results %}
-      <li><span>{{ r.label }}</span> {{ r.text }}</li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
-    {%- if e.youtube or e.links %}
-    <div class="links">
-      {%- if e.youtube %}
-      <a href="https://www.youtube.com/watch?v={{ e.youtube }}">Watch on YouTube ↗</a>
-      {%- endif %}
-      {%- for l in e.links %}
-      {%- if l.url contains "://" %}
-      <a href="{{ l.url }}">{{ l.label }} ↗</a>
-      {%- else %}
-      <a href="{{ l.url | relative_url }}">{{ l.label }}</a>
-      {%- endif %}
-      {%- endfor %}
-    </div>
-    {%- endif %}
-  </div>
-</article>
+{%- assign e = include.entry -%} {%- assign has_media = false -%} {%- if e.youtube or e.audio or e.score_pdf -%}{%- assign has_media = true -%}{%- endif -%}
+{%- if has_media %}
+{%- if e.youtube %}
+
+{%- endif %} {%- if e.audio %} {%- endif %} {%- if e.score_pdf %} View the score (PDF) {%- endif %}
+{%- elsif e.image %} ￼ {%- endif %}
+{{ e.title }}
+{%- if e.date or e.role %}
+{{ e.date }}{% if e.date and e.role %} Â· {% endif %}{{ e.role }}
+{%- endif %} {%- if e.description %} {{ e.description | markdownify }} {%- endif %} {%- if e.result %}
+Result: {{ e.result }}
+{%- endif %} {%- if e.results %}
+{%- for r in e.results %} {%- if r.url %}
+{{ r.label }} {{ r.text }} â†—
+{%- else %}
+{{ r.label }} {{ r.text }}
+{%- endif %} {%- endfor %}
+{%- endif %} {%- if e.youtube or e.links %}
+{%- if e.youtube %} Watch on YouTube â†— {%- endif %} {%- for l in e.links %} {%- if l.url contains "://" %} {{ l.label }} â†— {%- else %} {{ l.label }} {%- endif %} {%- endfor %}
+{%- endif %}

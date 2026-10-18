@@ -11,7 +11,7 @@
       results:
         - label: "First place, State Champions"
           text: "2026 IHSA State Tournament"
-          url: "https://www.ihsa.org/scores/game/payton-vs-stevenson-scb-2774-1226-20260321?season=2025-26"
+          links: "https://www.ihsa.org/scores/game/payton-vs-stevenson-scb-2774-1226-20260321?season=2025-26"
         - label: "First place"
           text: "2026 Masonic Sectionals, qualifying for Masonic State"
         - label: "First place"

@@ -7,10 +7,18 @@
     - title: "String Quartet No. 2"
       date: "March 2026"
       role: "Composer"
-      description: "Won the 2025 EYSO Composition Contest. A chamber ensemble premiered the quartet at the CMI Spring Concert on 29 March 2026."
-      result: "winner, 2025 EYSO Composition Contest"
+      description: "Won the 2025 EYSO Composition Contest. EYSO's Maud Powell String Quartet at the Chamber Music Institute Spring Concert on 29 March 2026."
       youtube: "pMnzc-tCMUE"
 
+    - title: "Desert Winds"
+      date: "April 2026"
+      role: "Composer"
+      description: "Composed for the 2025–26 Allegro!!! Violin Ensemble. It was performed at four ticketed shows, with Allegro's unique choreographed routines incorporated into the performance."
+      youtube: "vF0Ba4uOsB0"
+      links:
+        - label: "Watch on YouTube"
+          url: "https://youtu.be/vF0Ba4uOsB0"
+          
     - title: "Elgin Youth Symphony Orchestra, Philharmonia"
       date: "2025–26"
       role: "Violin; concertmaster, spring concert"
@@ -18,7 +26,7 @@
       result: "concertmaster, 2026 spring concert"
       youtube: "xylGU_pELi8"
       links:
-        - label: "EYSO Philharmonia"
+        - label: "Watch on YouTube"
           url: "https://www.eyso.org/programs-ensembles/philharmonia"
 
     - title: "Chicago Consort Violin Ensemble"
@@ -29,15 +37,6 @@
       links:
         - label: "Ensemble"
           url: "https://www.wsste.com/consort"
-
-    - title: "Desert Winds"
-      date: "April 2026"
-      role: "Composer"
-      description: "Composed for the 2025–26 Allegro!!! Violin Ensemble. The ensemble performed it in four shows on 25 and 26 April 2026."
-      result: "four performances"
-      links:
-        - label: "Ensemble"
-          url: "https://www.wsste.com/allegro"
 
 - heading: "2023–25"
   entries:

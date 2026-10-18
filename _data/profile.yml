@@ -8,7 +8,7 @@ email: "sidd.krishnan12@gmail.com"
 
 # Optional photos. Upload them to assets/images/ and enter the path, for example:
 # headshot: "/assets/images/headshot.jpg"
-headshot: ""
+headshot: "/assets/Headshot1.jpg"
 banner_image: ""
 
 intro: "Hello! I am a student at Walter Payton College Preparatory High School, in the Class of 2028." 

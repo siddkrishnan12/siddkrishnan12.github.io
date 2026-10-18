@@ -1,15 +1,30 @@
+
+
+Skip to content
+Using Gmail with screen readers
+
+Conversations
+Gemini
+Boost your productivity with Gemini in Gmail
+Get AI Inbox, 400 GB of storage, and higher usage limits for Gemini for $1.29 for 3 months $4.99
+38% of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: 0 minutes ago
+Open in 1 other location · Details
 # Academics & Awards page. Newest section first; newest entry first within each section.
 # Entry fields (all optional except title):
-#   title, date, role, description, result, results (list of label/text),
+#   title, date, role, description, result, results (list of label/text, optional url),
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
-- entries:
+- heading: "2025–26 · Grade 10"
+  entries:
     - title: "Walter Payton Scholastic Bowl Team"
       date: "2024–26"
       role: "Team member"
-      description: "Active member of Walter Payton's Scholastic bowl team throughout high school, which won the IHSA State Championship in 2026."
+      description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
+      result: "first place, 2026 IHSA State Tournament"
       results:
-        - label: "2026-IHSA"
+        - label: "First place"
           text: "2026 IHSA State Tournament"
           url: "https://www.ihsa.org/scores/game/payton-vs-stevenson-scb-2774-1226-20260321?season=2025-26"
         - label: "First place"
@@ -56,3 +71,5 @@
     - course: "AP US History"
     - course: "AP Music Theory"
     - course: "AP Calculus BC"
+academics.yml
+Displaying academics.yml.

@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+{%- assign p = site.data.profile -%}
+<div class="banner"{% if p.banner_image != "" and p.banner_image %} style="--banner-image: url('{{ p.banner_image | relative_url }}')"{% endif %}>
+  <div class="wrap">
+    <h1>{{ p.name }}</h1>
+    <p>{{ p.school }} · {{ p.class_of }}</p>
+  </div>
+</div>
+<main class="wrap">
+  <section>
+    <div class="intro">
+      {%- if p.headshot != "" and p.headshot %}
+      <img class="headshot" src="{{ p.headshot | relative_url }}" alt="{{ p.name }}">
+      {%- else %}
+      <div class="headshot" aria-hidden="true">{{ p.initials }}</div>
+      {%- endif %}
+      <div class="intro-text">{{ p.intro | markdownify }}</div>
+    </div>
+  </section>
+  <section>
+    <h2>Highlights</h2>
+    <div class="highlights">
+      {%- for h in p.highlights %}
+      <article class="hl">
+        {%- if h.image != "" and h.image %}
+        <img src="{{ h.image | relative_url }}" alt="" loading="lazy">
+        {%- endif %}
+        <div class="body">
+          <h3>{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+          <a class="btn" href="{{ h.link | relative_url }}">See more</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+</main>

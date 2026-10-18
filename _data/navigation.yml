@@ -1,0 +1,20 @@
+# Top menu, in order. Set "show: false" to hide a page until it has entries.
+
+- title: "Home"
+  url: "/"
+  show: true
+- title: "Academics & Awards"
+  url: "/academics/"
+  show: true
+- title: "Projects & Research"
+  url: "/projects/"
+  show: false
+- title: "Arts"
+  url: "/arts/"
+  show: true
+- title: "Service & Leadership"
+  url: "/service/"
+  show: false
+- title: "Resume"
+  url: "/resume/"
+  show: false

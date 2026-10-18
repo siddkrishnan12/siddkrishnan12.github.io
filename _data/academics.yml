@@ -1,0 +1,59 @@
+# Academics & Awards page. Newest section first; newest entry first within each section.
+# Entry fields (all optional except title):
+#   title, date, role, description, result, results (list of label/text),
+#   image, youtube (video ID), audio, score_pdf, links (list of label/url)
+
+- heading: "2025–26 · Grade 10"
+  entries:
+    - title: "Walter Payton Scholastic Bowl Team"
+      date: "2024–26"
+      role: "Team member"
+      description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
+      result: "first place, 2026 IHSA State Tournament"
+      results:
+        - label: "First place"
+          text: "2026 IHSA State Tournament"
+        - label: "First place"
+          text: "2026 Masonic Sectionals, qualifying for Masonic State"
+        - label: "First place"
+          text: "2026 Metro North Conference League, varsity"
+        - label: "First place"
+          text: "2025 IHSSBCA Kickoff Tournament"
+        - label: "Fourth place"
+          text: "2026 Loyola Ultima, varsity"
+        - label: "Seventh place"
+          text: "2026 NAQT State Tournament"
+        - label: "Individual"
+          text: "Statewide third place Rising Star award"
+
+    - title: "PSAT"
+      date: "2025–26"
+      role: "Grade 10"
+      result: "perfect score of 1520"
+
+    - title: "PreACT"
+      date: "2025–26"
+      role: "Grade 10"
+      result: "97th percentile; Rising Star: Distinguished Scholar certificate"
+
+- heading: "Summer 2025"
+  entries:
+    - title: "CIEE Honors French Language and Culture"
+      date: "Summer 2025"
+      role: "Rennes, France"
+      description: "Studied French language and culture in a high school summer abroad program. Took classes at Université Rennes 2."
+      result: "college credit from Tulane University"
+
+- heading: "Advanced Placement"
+  table:
+    - course: "AP Human Geography"
+      score: 5
+    - course: "AP Precalculus"
+      score: 5
+    - course: "AP French Language"
+      score: 5
+    - course: "AP Computer Science A"
+    - course: "AP Microeconomics"
+    - course: "AP US History"
+    - course: "AP Music Theory"
+    - course: "AP Calculus BC"

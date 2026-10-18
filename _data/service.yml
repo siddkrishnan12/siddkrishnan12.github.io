@@ -1,0 +1,13 @@
+# Service & Leadership page. Same entry format as academics.yml.
+# After adding the first entry, set "show: true" for this page in navigation.yml.
+#
+# Example:
+# - heading: "2026–27 · Grade 11"
+#   entries:
+#     - title: "Organization name"
+#       date: "2026–present"
+#       role: "Volunteer"
+#       description: "What he did and for whom."
+#       result: "hours or outcome"
+
+[]

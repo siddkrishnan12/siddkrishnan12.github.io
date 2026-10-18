@@ -1,0 +1,39 @@
+{%- assign profile = site.data.profile -%}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% if page.url != "/" %}{{ page.title }} · {% endif %}{{ profile.name }}</title>
+  <meta name="description" content="{{ page.intro | default: site.description | escape }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ profile.name }}</a>
+      <nav aria-label="Site pages">
+        <ul>
+          {%- for item in site.data.navigation -%}
+          {%- if item.show %}
+          <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          {%- endif -%}
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <div class="wrap">
+      <span>Contact: <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></span>
+      <span>Last updated {{ site.time | date: "%B %Y" }}</span>
+    </div>
+  </footer>
+</body>
+</html>

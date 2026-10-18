@@ -1,0 +1,38 @@
+# Home page and site-wide details.
+
+name: "Siddharth Krishnan"
+initials: "SK"
+school: "Walter Payton College Preparatory High School"
+class_of: "Class of 2028"
+email: "sidd.krishnan12@gmail.com"
+
+# Optional photos. Upload them to assets/images/ and enter the path, for example:
+# headshot: "/assets/images/headshot.jpg"
+headshot: ""
+banner_image: ""
+
+intro: >
+  I am a junior at Walter Payton College Preparatory High School in Chicago.
+  I play violin, compose for strings, and compete on the Scholastic Bowl team.
+  In 2026, my team won the IHSA State Tournament, and my String Quartet No. 2
+  won the EYSO Composition Contest. This site collects my work in academics
+  and music.
+
+highlights:
+  - title: "IHSA State Champions"
+    text: "Scholastic Bowl, first place at the 2026 IHSA State Tournament"
+    link: "/academics/"
+    image: ""
+  - title: "String Quartet No. 2"
+    text: "Winner, 2025 EYSO Composition Contest; premiered March 2026"
+    link: "/arts/"
+    image: ""
+  - title: "Balkan Concert Tour"
+    text: "Chicago Consort Violin Ensemble in four countries, June 2026"
+    link: "/arts/"
+    image: ""
+
+# Resume: upload a PDF to assets/files/ and enter its path, for example:
+# resume_pdf: "/assets/files/resume.pdf"
+# Then set "show: true" for Resume in navigation.yml.
+resume_pdf: ""

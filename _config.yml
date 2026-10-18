@@ -1,0 +1,11 @@
+title: Siddharth Krishnan
+description: Academic and musical achievements of Siddharth Krishnan, Walter Payton College Prep, Class of 2028.
+
+# Leave both empty when the repository is named <username>.github.io.
+# For any other repository name, set baseurl to "/<repository-name>".
+url: ""
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - README.md

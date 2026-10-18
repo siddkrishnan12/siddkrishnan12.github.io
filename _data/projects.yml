@@ -1,0 +1,16 @@
+# Projects & Research page. Same entry format as academics.yml.
+# After adding the first entry, set "show: true" for this page in navigation.yml.
+#
+# Example:
+# - heading: "2026–27 · Grade 11"
+#   entries:
+#     - title: "Project name"
+#       date: "Month Year"
+#       role: "Lead developer"
+#       description: "What it is and why it matters."
+#       result: "the outcome"
+#       links:
+#         - label: "Demo"
+#           url: "https://..."
+
+[]

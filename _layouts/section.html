@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- assign sections = site.data[page.data_file] -%}
+<div class="wrap page-title">
+  <h1>{{ page.title }}</h1>
+  {% if page.intro %}<p>{{ page.intro }}</p>{% endif %}
+</div>
+<main class="wrap">
+  {%- if sections == nil or sections.size == 0 %}
+  <p class="empty">Entries coming soon.</p>
+  {%- endif %}
+  {%- for section in sections %}
+  <section>
+    <h2 class="year">{{ section.heading }}</h2>
+    {%- if section.entries %}
+    <div class="cards">
+      {%- for entry in section.entries %}
+      {% include card.html entry=entry %}
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- if section.table %}
+    <div class="ap">
+      <table>
+        <thead><tr><th scope="col">Course</th><th scope="col">Score</th></tr></thead>
+        <tbody>
+          {%- for row in section.table %}
+          <tr><td>{{ row.course }}</td>{% if row.score %}<td>{{ row.score }}</td>{% else %}<td class="pending">In progress</td>{% endif %}</tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    {%- endif %}
+  </section>
+  {%- endfor %}
+</main>

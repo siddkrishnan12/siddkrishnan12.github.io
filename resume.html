@@ -1,0 +1,18 @@
+---
+layout: default
+title: Resume
+intro: "A one-page summary of Siddharth's academic and musical work."
+permalink: /resume/
+---
+{%- assign p = site.data.profile -%}
+<div class="wrap page-title">
+  <h1>Resume</h1>
+</div>
+<main class="wrap">
+  {%- if p.resume_pdf != "" and p.resume_pdf %}
+  <p><a class="btn" href="{{ p.resume_pdf | relative_url }}">Download the PDF</a></p>
+  <iframe class="resume" src="{{ p.resume_pdf | relative_url }}" title="Resume"></iframe>
+  {%- else %}
+  <p class="empty">Resume coming soon.</p>
+  {%- endif %}
+</main>

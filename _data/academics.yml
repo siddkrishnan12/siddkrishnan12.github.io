@@ -4,9 +4,9 @@
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
 - heading: "2025–26 · Grade 10"
+    - image: "/assets/css/Scobo Team.jpeg"
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
-      image: "/assets/css/Scobo Team.jpeg"
       date: "2024–26"
       role: "Team member"
       description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
@@ -15,9 +15,10 @@
           text: "2026 IHSA State Tournament"
           url: "https://www.ihsa.org/scores/game/payton-vs-stevenson-scb-2774-1226-20260321?season=2025-26"
         - label: "First place"
-          text: "2026 Masonic Sectionals, qualifying for Masonic State"
+          text: "2026 Masonic Academic Bowl State Finals"
+          url: "https://www.academicbowl.org/historical-results"
         - label: "First place"
-          text: "2026 Metro North Conference League, varsity"
+          text: "2026 Metro North Conference League"
         - label: "First place"
           text: "2025 IHSSBCA Kickoff Tournament"
         - label: "Fourth place"

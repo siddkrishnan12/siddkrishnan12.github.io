@@ -6,10 +6,10 @@
 - heading: "2025–26 · Grade 10"
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
+      image: "/assets/css/Scobo Team.jpeg"
       date: "2024–26"
       role: "Team member"
       description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
-      result: "first place, 2026 IHSA State Tournament"
       results:
         - label: "First place"
           text: "2026 IHSA State Tournament"

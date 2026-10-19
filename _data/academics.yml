@@ -4,9 +4,9 @@
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
 - heading: "2025–26 · Grade 10"
-    - image: "/assets/css/Scobo Team.jpeg"
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
+    - image: "/assets/css/Scobo Team.jpeg"
       date: "2024–26"
       role: "Team member"
       description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."

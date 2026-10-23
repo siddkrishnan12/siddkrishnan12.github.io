@@ -9,7 +9,7 @@
     - image: "/assets/css/Scobo Team.jpeg"
       date: "2024–26"
       role: "Team member"
-      description: "Competed in varsity quiz bowl tournaments across Illinois. The team won Regional and Sectional rounds on the way to the state title."
+      description: "Active member of Walter Payton's Varsity Scholastic Bowl team, competing in tournaments across Illinois throughout high school."
       results:
         - label: "First place"
           text: "2026 IHSA State Tournament"
@@ -37,6 +37,9 @@
       date: "2025–26"
       role: "Grade 10"
       result: "perfect score of 1520"
+      links:
+       - label: "Score Report"
+         url: 
 
     - title: "PreACT"
       date: "2025–26"

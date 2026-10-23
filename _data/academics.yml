@@ -3,7 +3,7 @@
 #   title, date, role, description, result, results (list of label/text, optional url),
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
-- heading: "2025–26 · Grade 10"
+- heading:
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
     - image: "/assets/css/Scobo Team.jpeg"
@@ -39,7 +39,7 @@
       result: "perfect score of 1520"
       links:
        - label: "Score Report"
-         url: 
+         url: "file:///Users/siddharthkrishnan/Downloads/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf"
 
     - title: "PreACT"
       date: "2025–26"

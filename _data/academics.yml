@@ -44,7 +44,10 @@
     - title: "PreACT"
       date: "2025–26"
       role: "Grade 10"
-      result: "97th percentile; Rising Star: Distinguished Scholar certificate"
+      result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
+      links:
+       - label: "Score Report"
+        url: "file:///Users/siddharthkrishnan/Downloads/Scores%20-%20MyACT.html"
 
 - heading: "Summer 2025"
   entries:
@@ -63,7 +66,15 @@
     - course: "AP French Language"
       score: 5
     - course: "AP Computer Science A"
+      score: 5
     - course: "AP Microeconomics"
+      score: 5
     - course: "AP US History"
+      score: 5
     - course: "AP Music Theory"
+      score: 5
     - course: "AP Calculus BC"
+      score: 5
+  links:
+    label: "Score Report"
+     url: "file:///Users/siddharthkrishnan/Downloads/Score%20Report.pdf"

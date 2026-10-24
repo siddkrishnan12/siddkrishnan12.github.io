@@ -58,6 +58,11 @@
       result: "college credit from Tulane University"
 
 - heading: "Advanced Placement"
+  entries:
+    - title: "College Board AP Exams"
+      links:
+        - label: "Score Report"
+          url: "/assets/css/Score Report.pdf"
   table:
     - course: "AP Human Geography"
       score: 5
@@ -75,6 +80,4 @@
       score: 5
     - course: "AP Calculus BC"
       score: 5
-  links:
-    - label: "Score Report"
-      url: "/assets/css/Score Report.pdf" # Fixed indentation alignment and changed local path to relative web path
+

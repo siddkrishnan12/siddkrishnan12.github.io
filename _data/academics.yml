@@ -41,13 +41,14 @@
        - label: "Score Report"
          url: "file:///Users/siddharthkrishnan/Downloads/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf"
 
-    - title: "PreACT"
-      date: "2025–26"
-      role: "Grade 10"
-      result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
-      links:
-       - label: "Score Report"
-        url: "file:///Users/siddharthkrishnan/Downloads/Scores%20-%20MyACT.html"
+  - title: "PreACT"
+    date: "2025–26"
+    role: "Grade 10"
+    result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
+    links:
+      - label: "Score Report"
+        url: "file:///Users/siddharthkrishnan/Downloads/Scores%20-%20MyACT.html" # Note: This local link won't work online!
+
 
 - heading: "Summer 2025"
   entries:

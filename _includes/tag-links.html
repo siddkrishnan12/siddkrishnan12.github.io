@@ -1,0 +1,21 @@
+{%- comment -%}
+Tag chips for a list of card titles. Pass tags=<list>. A tag that matches a card title links to that card; any other tag shows as plain text.
+{%- endcomment -%}
+{%- if include.tags %}
+<div class="tags">
+  {%- assign files = "academics,arts,projects,service" | split: "," -%}
+  {%- for tag in include.tags -%}
+    {%- assign tag_url = nil -%}
+    {%- for f in files -%}
+      {%- for s in site.data[f] -%}
+        {%- for en in s.entries -%}
+          {%- if tag_url == nil and en.title == tag -%}
+            {%- capture tag_url %}/{{ f }}/#{{ en.title | slugify }}{% endcapture -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endfor %}
+  {% if tag_url %}<a class="tag" href="{{ tag_url | relative_url }}">{{ tag }}</a>{% else %}<span class="tag">{{ tag }}</span>{% endif %}
+  {%- endfor %}
+</div>
+{%- endif %}

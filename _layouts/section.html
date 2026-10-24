@@ -7,6 +7,14 @@ layout: default
   {% if page.intro %}<p>{{ page.intro }}</p>{% endif %}
 </div>
 <main class="wrap">
+  {%- if page.playlist and page.playlist != "" %}
+  <section class="playlist">
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list={{ page.playlist }}" title="{{ page.title }} playlist" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    </div>
+    <p class="playlist-link"><a href="https://www.youtube.com/playlist?list={{ page.playlist }}">Open the playlist on YouTube ↗</a></p>
+  </section>
+  {%- endif %}
   {%- if sections == nil or sections.size == 0 %}
   <p class="empty">Entries coming soon.</p>
   {%- endif %}

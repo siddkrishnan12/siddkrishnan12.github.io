@@ -15,6 +15,12 @@
 - title: "Service & Leadership"
   url: "/service/"
   show: true
+- title: "Media"
+  url: "/media/"
+  show: true
+- title: "Acknowledgements"
+  url: "/acknowledgements/"
+  show: true
 - title: "Resume"
   url: "/resume/"
   show: false

@@ -38,4 +38,23 @@ permalink: /
       {%- endfor %}
     </div>
   </section>
+  {%- assign recent = site.data.media | sort: "date", "first" | reverse -%}
+  {%- if recent.size > 0 %}
+  <section>
+    <h2>In the news</h2>
+    <div class="mentions compact">
+      {%- for m in recent limit: 3 %}
+      {% include mention.html m=m compact=true %}
+      {%- endfor %}
+    </div>
+    <p class="see-all"><a class="btn" href="{{ '/media/' | relative_url }}">See all media</a></p>
+  </section>
+  {%- endif %}
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact-row">
+      <a class="btn" href="mailto:{{ p.email }}">Email me</a>
+      <span>{{ p.email }}</span>
+    </div>
+  </section>
 </main>

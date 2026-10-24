@@ -1,0 +1,37 @@
+---
+layout: default
+title: Acknowledgements
+intro: "Thanks to the teachers, coaches, and mentors who helped Siddharth along the way."
+permalink: /acknowledgements/
+---
+{%- assign ack = site.data.acknowledgements -%}
+<div class="wrap page-title">
+  <h1>Acknowledgements</h1>
+  {%- if ack.intro %}
+  <div class="ack-intro">{{ ack.intro | markdownify }}</div>
+  {%- endif %}
+</div>
+<main class="wrap">
+  {%- if ack.groups == nil or ack.groups.size == 0 %}
+  <p class="empty">Names coming soon.</p>
+  {%- endif %}
+  {%- for g in ack.groups %}
+  <section>
+    <h2 class="year">{{ g.heading }}</h2>
+    <div class="people">
+      {%- for p in g.people %}
+      <article class="person">
+        <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.name }} ↗</a>{% else %}{{ p.name }}{% endif %}</h3>
+        {%- if p.role %}
+        <p class="meta">{{ p.role }}</p>
+        {%- endif %}
+        {%- if p.note %}
+        <p class="person-note">{{ p.note }}</p>
+        {%- endif %}
+        {% include tag-links.html tags=p.tags %}
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
+</main>

@@ -1,0 +1,41 @@
+{%- comment -%}
+One media mention. Pass m=<mention>; pass compact=true on Home (thumbnail only, no player, quote, or tags).
+{%- endcomment -%}
+{%- assign m = include.m -%}
+{%- assign compact = include.compact -%}
+{%- assign img_src = nil -%}
+{%- if m.image and m.image != "" -%}
+  {%- if m.image contains "://" -%}{%- assign img_src = m.image -%}{%- else -%}{%- assign img_src = m.image | relative_url -%}{%- endif -%}
+{%- endif -%}
+{%- assign href = m.url -%}
+{%- unless m.url contains "://" -%}{%- assign href = m.url | relative_url -%}{%- endunless -%}
+{%- assign has_media = false -%}
+{%- if m.youtube or img_src -%}{%- assign has_media = true -%}{%- endif -%}
+<article class="mention{% if compact %}{% if img_src %} has-thumb{% endif %}{% elsif has_media %} has-media{% endif %}" id="{{ m.title | slugify }}">
+  {%- if compact %}
+  {%- if img_src %}
+  <img class="thumb" src="{{ img_src }}" alt="" loading="lazy">
+  {%- endif %}
+  {%- elsif m.youtube %}
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ m.youtube }}" title="{{ m.title | escape }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  </div>
+  {%- elsif img_src %}
+  <img class="mention-img" src="{{ img_src }}" alt="{{ m.title | escape }}" loading="lazy">
+  {%- endif %}
+  <div class="mention-body">
+    <p class="mention-meta">
+      {%- if m.date %}<time datetime="{{ m.date }}">{{ m.date | date: "%B %-d, %Y" }}</time>{% endif -%}
+      {%- if m.outlet %}<span>{{ m.outlet }}</span>{% endif -%}
+      {%- if m.type %}<span class="badge">{{ m.type }}</span>{% endif -%}
+      {%- if compact and m.youtube %}<a class="badge" href="{{ '/media/' | relative_url }}#{{ m.title | slugify }}">▶ Video</a>{% endif -%}
+    </p>
+    <h3><a href="{{ href }}">{{ m.title }} ↗</a></h3>
+    {%- unless compact %}
+    {%- if m.quote %}
+    <blockquote>{{ m.quote }}</blockquote>
+    {%- endif %}
+    {% include tag-links.html tags=m.tags %}
+    {%- endunless %}
+  </div>
+</article>

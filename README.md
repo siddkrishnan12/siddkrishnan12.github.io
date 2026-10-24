@@ -138,6 +138,45 @@ Keep file names lowercase with hyphens, such as `balkan-tour.jpg`. Resize photos
 
 **Home page photos:** set `headshot`, `banner_image`, and each highlight's `image` in `_data/profile.yml`.
 
+## Add a media mention
+
+News articles, school or league announcements, concert programs, and video features all go in `_data/media.yml`. The Media page lists them newest first, Home shows the three newest, and each tagged card gets an "In the news" line.
+
+```yaml
+- date: "2026-03-22"
+  title: "Payton wins IHSA Scholastic Bowl title"
+  outlet: "Chicago Tribune"
+  type: "Article"
+  url: "https://..."
+  quote: "A short excerpt that names Siddharth."
+  image: "/assets/images/tribune-ihsa.jpg"
+  tags:
+    - "Walter Payton Scholastic Bowl Team"
+```
+
+- **date** must use the form `"YYYY-MM-DD"`; the site sorts by it.
+- **tags** copy card titles exactly, letter for letter, from `academics.yml`, `arts.yml`, and the other data files. A matching tag becomes a link to that card. A tag that matches nothing shows as plain text, which signals a typo.
+- **image** (optional) shows a clipping, photo, or screenshot beside the mention. **youtube** (optional) shows a video player there instead.
+- **type** is a short label, such as Article, Video, Radio, TV, Program, or Press release.
+- To save a printed article or program, scan it, upload the PDF to `assets/files/`, and use its path as the `url`.
+
+## Thank the people who helped
+
+The Acknowledgements page reads `_data/acknowledgements.yml`. Rewrite the `intro` paragraph in your own words, then add people under group headings such as Teachers, Music instructors, Coaches, and Mentors:
+
+```yaml
+groups:
+  - heading: "Teachers"
+    people:
+      - name: "Ms. Jane Doe"
+        role: "AP French teacher, Walter Payton College Prep"
+        note: "Pushed me to apply for the CIEE program in Rennes."
+        tags:
+          - "CIEE Honors French Language and Culture"
+```
+
+Replace `groups: []` with `groups:` when adding the first group. `role`, `note`, `url`, and `tags` are optional; tags work the same way as on the Media page. Ask each person before naming them on a public site.
+
 ## Part 4. Show the hidden pages
 
 Projects & Research and Resume stay out of the menu until they have content. To show one, change its `show: false` to `show: true` in `_data/navigation.yml`.

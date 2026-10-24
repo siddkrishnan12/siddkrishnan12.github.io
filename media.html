@@ -1,0 +1,34 @@
+---
+layout: default
+title: Media
+intro: "News coverage, announcements, and features about Siddharth's work, newest first."
+permalink: /media/
+---
+{%- assign mentions = site.data.media | sort: "date", "first" | reverse -%}
+<div class="wrap page-title">
+  <h1>Media</h1>
+  <p>{{ page.intro }}</p>
+</div>
+<main class="wrap">
+  {%- if mentions.size == 0 %}
+  <p class="empty">Media mentions coming soon.</p>
+  {%- else %}
+  {%- assign current_year = "" -%}
+  {%- for m in mentions -%}
+    {%- assign y = m.date | slice: 0, 4 -%}
+    {%- if y != current_year -%}
+      {%- unless forloop.first %}
+    </div>
+  </section>
+      {%- endunless %}
+  <section>
+    <h2 class="year">{{ y }}</h2>
+    <div class="mentions">
+      {%- assign current_year = y -%}
+    {%- endif %}
+      {% include mention.html m=m %}
+  {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+</main>

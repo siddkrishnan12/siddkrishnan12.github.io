@@ -1,0 +1,25 @@
+# Acknowledgements page: the people and organizations who helped along the way.
+# intro: the opening paragraph (a draft; rewrite it in your own words).
+# groups: one heading per kind of helper. Within a group, list people in any order.
+# Person fields (name is needed; the rest are optional):
+#   name   full name, or an organization
+#   role   their role and where, e.g. "AP Music Theory teacher, Walter Payton College Prep"
+#   note   one or two sentences of thanks, in your own words
+#   url    a link to their page or organization
+#   tags   card titles they helped with, copied exactly from academics.yml, arts.yml, etc.
+#
+# Example group:
+# - heading: "Teachers"
+#   people:
+#     - name: "Ms. Jane Doe"
+#       role: "AP French teacher, Walter Payton College Prep"
+#       note: "Pushed me to apply for the CIEE program in Rennes and helped me prepare."
+#       tags:
+#         - "CIEE Honors French Language and Culture"
+
+intro: >
+  None of the work on this site happened alone. These teachers, coaches,
+  conductors, and mentors gave their time, patience, and encouragement,
+  and I am grateful to each of them.
+
+groups: []

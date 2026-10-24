@@ -1,0 +1,25 @@
+# Media page: news articles, announcements, programs, and videos that mention Siddharth.
+# Order doesn't matter; the site sorts by date, newest first.
+# Fields (date, title, and url are needed; the rest are optional):
+#   date     "YYYY-MM-DD"
+#   title    headline of the article or video
+#   outlet   who published it
+#   type     Article, Video, Radio, TV, Program, or Press release
+#   url      link to the coverage
+#   quote    a short excerpt that names Siddharth
+#   image    "/assets/images/<file>" or a full https:// link (clipping, photo, screenshot)
+#   youtube  video ID, the part after "v=" (shows a player; wins over image)
+#   tags     list of card titles this mention covers, copied exactly from academics.yml, arts.yml, etc.
+#
+# Example:
+# - date: "2026-03-22"
+#   title: "Payton wins IHSA Scholastic Bowl title"
+#   outlet: "Chicago Tribune"
+#   type: "Article"
+#   url: "https://..."
+#   quote: "Sophomore Siddharth Krishnan ..."
+#   image: "/assets/images/tribune-ihsa.jpg"
+#   tags:
+#     - "Walter Payton Scholastic Bowl Team"
+
+[]

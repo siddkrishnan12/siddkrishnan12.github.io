@@ -2,13 +2,14 @@
 # youtube: the video ID, the part after "v=" in a YouTube link.
 # audio and score_pdf: upload files to assets/files/ and enter the path.
 
-- heading: "2025–26 · Grade 10"
+- heading: "Composition"
   entries:
     - title: "String Quartet No. 2"
       date: "March 2026"
       role: "Composer"
       description: "Won the 2025 EYSO Composition Contest. EYSO's Maud Powell String Quartet at the Chamber Music Institute Spring Concert on 29 March 2026."
       youtube: "pMnzc-tCMUE"
+      score_pdf: "/assets/css/Final String Quartet 2.pdf"
 
     - title: "Desert Winds"
       date: "April 2026"
@@ -16,12 +17,12 @@
       description: "Composed for the 2025–26 Allegro!!! Violin Ensemble. It was performed at four ticketed shows, with Allegro's unique choreographed routines incorporated into the performance."
       youtube: "vF0Ba4uOsB0"
       score_pdf: "/assets/css/Final Desert Winds- Full Score.pdf"
-          
+- heading: "Performance"
+  entries:
     - title: "Elgin Youth Symphony Orchestra, Philharmonia"
       date: "2025–26"
-      role: "Violin; concertmaster, spring concert"
-      description: "Played violin in the Philharmonia orchestra for the 2025–26 season. Served as concertmaster for the 2026 spring concert, *In a Single Moment*."
-      result: "concertmaster, 2026 spring concert"
+      role: "Concertmaster, Spring Concert"
+      description: "Played violin in EYSO's Philharmonia orchestra for the 2025–26 season. Served as concertmaster for the 2026 spring concert, *In a Single Moment*."
       youtube: "xylGU_pELi8"
       links:
         - label: "Watch on YouTube"
@@ -30,8 +31,9 @@
     - title: "Chicago Consort Violin Ensemble"
       date: "2025–26"
       role: "Violin"
-      description: "Toured Slovenia, Croatia, Bosnia, and Montenegro in June 2026. Performed with the RTV Slovenia Children's Choir."
-      result: "international tour in four countries"
+      description: "Went on an international tour, giving performances across Slovenia, Croatia, Bosnia, and Montenegro, including a joint performance with the RTV Slovenia Choir, one of the oldest radio choirs in Europe."
+      image: "assets/css/Consort1.HEIC"
+      image: "assets/css/Consort2.jpg"
       links:
         - label: "Ensemble"
           url: "https://www.wsste.com/consort"

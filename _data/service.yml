@@ -2,12 +2,13 @@
 # After adding the first entry, set "show: true" for this page in navigation.yml.
 #
 # Example:
-# - heading: "2026–27 · Grade 11"
-#   entries:
-#     - title: "Organization name"
-#       date: "2026–present"
-#       role: "Volunteer"
-#       description: "What he did and for whom."
-#       result: "hours or outcome"
+ - heading: "Summer 2026"
+   entries:
+     - title: "Musical Internship: Disney's _The Little Mermaid_ Musical"
+       role: "Pit Orchestra member: Violin"
+       description: "Interned over four weeks at Uptown Theater in Highland Park, as a pit orchestra member for their production, rehearsing and performing among professional musicians."
+       image: "/assets/css/mermaid.HEIC"
+       links:
+        - label: "Uptown Theater"
+         url: "https://www.uptownhp.org/"
 
-[]

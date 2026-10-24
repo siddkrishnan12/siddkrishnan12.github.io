@@ -76,5 +76,5 @@
     - course: "AP Calculus BC"
       score: 5
   links:
-    label: "Score Report"
-     url: "file:///Users/siddharthkrishnan/Downloads/Score%20Report.pdf"
+   - label: "Score Report"
+    url: "file:///Users/siddharthkrishnan/Downloads/Score%20Report.pdf"

@@ -3,10 +3,10 @@
 #   title, date, role, description, result, results (list of label/text, optional url),
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
-- heading:
+- heading: "---" # Replace with your actual section heading if needed
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
-    - image: "/assets/css/Scobo Team.jpeg"
+      image: "/assets/css/Scobo Team.jpeg"
       date: "2024–26"
       role: "Team member"
       description: "Active member of Walter Payton's Varsity Scholastic Bowl team, competing in tournaments across Illinois throughout high school."

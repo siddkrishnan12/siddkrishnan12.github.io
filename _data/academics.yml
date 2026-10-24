@@ -3,7 +3,7 @@
 #   title, date, role, description, result, results (list of label/text, optional url),
 #   image, youtube (video ID), audio, score_pdf, links (list of label/url)
 
-- heading: "---" # Replace with your actual section heading if needed
+- heading: "High School Achievements" # Replaced "---" to avoid breaking the YAML structure
   entries:
     - title: "Walter Payton Scholastic Bowl Team"
       image: "/assets/css/Scobo Team.jpeg"
@@ -38,17 +38,16 @@
       role: "Grade 10"
       result: "Perfect score of 1520"
       links:
-       - label: "Score Report"
-         url: "file:///Users/siddharthkrishnan/Downloads/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf"
+        - label: "Score Report"
+          url: "/assets/css/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf" # Fixed local computer path to relative web path
 
-  - title: "PreACT"
-    date: "2025–26"
-    role: "Grade 10"
-    result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
-    links:
-      - label: "Score Report"
-        url: "file:///Users/siddharthkrishnan/Downloads/Scores%20-%20MyACT.html" # Note: This local link won't work online!
-
+    - title: "PreACT" # Corrected indentation: aligned under the entries array
+      date: "2025–26"
+      role: "Grade 10"
+      result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
+      links:
+        - label: "Score Report"
+          url: "assets/css/Scores - MyACT.pdf" # Fixed local computer path to relative web path
 
 - heading: "Summer 2025"
   entries:
@@ -77,5 +76,5 @@
     - course: "AP Calculus BC"
       score: 5
   links:
-   - label: "Score Report"
-    url: "file:///Users/siddharthkrishnan/Downloads/Score%20Report.pdf"
+    - label: "Score Report"
+      url: "/assets/css/Score Report.pdf" # Fixed indentation alignment and changed local path to relative web path

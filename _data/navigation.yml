@@ -17,10 +17,10 @@
   show: true
 - title: "Media"
   url: "/media/"
-  show: true
+  show: false
 - title: "Acknowledgements"
   url: "/acknowledgements/"
-  show: true
+  show: false
 - title: "Resume"
   url: "/resume/"
   show: false

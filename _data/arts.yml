@@ -7,7 +7,7 @@
     - title: "String Quartet No. 2"
       date: "March 2026"
       role: "Composer"
-      description: "Won the 2025 EYSO Composition Contest. EYSO's Maud Powell String Quartet at the Chamber Music Institute Spring Concert on 29 March 2026."
+      description: "Won the 2025 EYSO Composition Contest, and had *String Quartet No. 2* performed by EYSO's Maud Powell String Quartet at the Chamber Music Institute."
       youtube: "pMnzc-tCMUE"
       score_pdf: "/assets/css/Final String Quartet 2.pdf"
 
@@ -24,9 +24,9 @@
       role: "Concertmaster, Spring Concert"
       description: "Played violin in EYSO's Philharmonia orchestra for the 2025–26 season. Served as concertmaster for the 2026 spring concert, *In a Single Moment*."
       youtube: "xylGU_pELi8"
-      links:
-        - label: "Watch on YouTube"
-          url: "https://www.eyso.org/programs-ensembles/philharmonia"
+      #links:
+       # - label: "Watch on YouTube"
+        #  url: "https://www.eyso.org/programs-ensembles/philharmonia"
 
     - title: "Chicago Consort Violin Ensemble"
       date: "2025–26"

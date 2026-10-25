@@ -54,8 +54,11 @@
     - title: "CIEE Honors French Language and Culture"
       date: "Summer 2025"
       role: "Rennes, France"
-      description: "Studied French language and culture in a high school summer abroad program. Took classes at Université Rennes 2."
+      description: "Attended a Four-week intensive Study Abroad program, learning French through immersion taking courses at Université Rennes 2."
       result: "college credit from Tulane University"
+      links:
+        - label: "Course Description"
+         url: "https://cirefe.univ-rennes2.fr/en/courses/programmes-dete/cours-dete"
 
 - heading: "Advanced Placement"
   entries:
@@ -81,5 +84,8 @@
     - course: "AP Calculus BC"
       score: 5
     - course: "AP U.S. Government"
+    - course: "AP English Language"
+    - course: "AP Physics C: Mechanics"
+    - course: "AP Physics C: Magnetism"
 
 

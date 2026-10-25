@@ -46,3 +46,21 @@
       links:
         - label: "Ensemble"
           url: "https://www.wsste.com/allegro"
+
+    - title: "Summer Chamber Music Camp"
+      date: "July 2026"
+      description: "Attended and played viola in Naperville Suzuki School's Summer Chamber Music Camp for five consecutive years, most recently performing Tchaikovsky's String Quartet No. 1, and being the viola section leader in the chamber orchestra's performances of Grieg's Holberg Suite and Coleridge-Taylor's 4 Noveletten."
+      youtube: "kJmQHMj0naU"
+      links:
+        - label: "Holberg Suite"
+          url: "https://youtu.be/NM10i1pjmz8"
+        - label: "Noveletten"
+          url: "https://youtu.be/f8ksB4RWgwA"
+
+    - title: "Young Naperville Singers"
+      description: "Five-year member of Young Naperville Singers' Canto Vivo youth choir, giving performances throughout the year."
+      image: "assets/css/Canto Vivo.jpg"
+      links:
+          - label: "YNS"
+            url: "https://ynschoirs.org/"
+

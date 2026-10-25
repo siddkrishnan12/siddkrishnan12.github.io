@@ -1,12 +1,20 @@
 # Service & Leadership page. Same entry format as academics.yml.
 # After adding the first entry, set "show: true" for this page in navigation.yml.
 
-- heading: "Summer 2026"
+- heading: ""
   entries:
-    - title: "Musical Internship: Disney's _The Little Mermaid_ Musical"
+    - title: "Musical Internship: Disney's *The Little Mermaid* Musical"
       role: "Pit Orchestra member: Violin"
       description: "Interned over four weeks at Uptown Theater in Highland Park, as a pit orchestra member for their production, rehearsing and performing among professional musicians."
       image: "/assets/css/mermaid.jpg"
       links:
-        - label: "Uptown Theater"
-          url: "https://www.uptownhp.org/"
+        - label: "Digital Program"
+          url: "https://audienceaccess.co/show/UPTOWN-16376"
+
+    - title: "Teaching and Work Experience: AP French"
+      role: "Teaching Assistant"
+      description: "Served as a teaching assistant in AP French at Payton for the 2026-27 school year, helping create and lead lessons to prepare students for the AP Exam."
+
+    - title: "Leadership: Programing with Python Seminar"
+      role: "Student teacher"
+      description: "Led the Programming with Python Seminar course at Payton, for the 2026027 school year, teaching other students the fundamentals of the programming language."

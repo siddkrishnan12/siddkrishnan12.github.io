@@ -42,7 +42,23 @@
 
 - heading: "Standardized Testing"
   entries:
-    - title: "College Board AP Exams"
+    - title: "PSAT"
+      date: "2025–26"
+      role: "Grade 10"
+      result: "Perfect score of 1520"
+      links:
+        - label: "Score Report"
+          url: "/assets/css/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf"
+
+    - title: "PreACT"
+      date: "2025–26"
+      role: "Grade 10"
+      result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
+      links:
+        - label: "Score Report"
+          url: "assets/css/Scores - MyACT.pdf"
+
+    - title: "AP Exams"
       links:
         - label: "Score Report"
           url: "/assets/css/Score Report.pdf"
@@ -67,22 +83,6 @@
     - course: "AP English Language"
     - course: "AP Physics C: Mechanics"
     - course: "AP Physics C: Magnetism"
-
-    - title: "PSAT"
-      date: "2025–26"
-      role: "Grade 10"
-      result: "Perfect score of 1520"
-      links:
-        - label: "Score Report"
-          url: "/assets/css/digital_psat_nm_144583239_4d95deea-cc86-4dd2-b720-e5d5532b76f3.pdf"
-
-    - title: "PreACT"
-      date: "2025–26"
-      role: "Grade 10"
-      result: "Perfect Composite Score of 35, Distinguished Scholar certificate"
-      links:
-        - label: "Score Report"
-          url: "assets/css/Scores - MyACT.pdf"
 
 - heading: "Study Abroad"
   entries:

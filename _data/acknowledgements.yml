@@ -21,9 +21,8 @@ intro: >
   None of the achievements on this site would have been possible if not for the work of all of the mentors and figures who have helped me along the way. I am deeply grateful to each one of them, and their unique contribution to the person I am today.
 groups:
   - heading: "Academic Teachers"
-    entries:
-      - title: ""
-        description: "I owe my gratitude to all my academic teachers from Walter Payton and the Avery Coonley School, as well as from the University of Chicago. They have shaped my interests in academic work and a desire to be a life-long learner."
+    people:
+      - name: "I owe my gratitude to all my academic teachers from Walter Payton and the Avery Coonley School, as well as from the University of Chicago. They have shaped my interests in academic work and a desire to be a life-long learner."
 #    people:
 #      - name: "Prof. Salikoko Mufwene"
 #        role: "Linguistics Professor at University of Chicago, teaching the class *Language and Communication*"

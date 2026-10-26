@@ -18,8 +18,50 @@
 #         - "CIEE Honors French Language and Culture"
 
 intro: >
-  None of the work on this site happened alone. These teachers, coaches,
-  conductors, and mentors gave their time, patience, and encouragement,
-  and I am grateful to each of them.
+  None of the achievments on this site would have been possible if not for the work of all of the mentors and figures who have helped me along the way. I am deeply grateful to each one of them, and their unique contribution to the person I am today.
+groups:
+  - heading: "Academic Teachers"
+    people:
+      - name: "Prof. Salikoko Mufwene"
+        role: "Linguistics Professor at University of Chicago, teaching the class *Language and Communication*"
+      - name: "Mr. Mark Taylor"
+        role: "Walter Payton Scholastic Bowl Team Coach"
+      - name: "Mr. Brian Keehn"
+        role: "AP French Teaching Assistant Supervisor, Walter Payton College Prep"
+      - name: "Ms. Amy Seter"
+        role: "AP Physics C Teacher, Walter Payton College Prep"
+      - name: "Mr. Eric May"
+        role: "AP US Government Teacher, Walter Payton College Prep"
+      - name: "Ms. Margaret Howard"
+        role: "AP English Language Teacher, Walter Payton College Prep"
+      - name: "Mr. Michael Caines"
+        role: "AP Calculus BC and Analytical Mathematics Teacher, Walter Payton College Prep"
+      - name: "Mr. Byron Espinoza"
+        role: "AP Computer Science A Teacher, Walter Payton College Prep"
+      - name: "Mr. Brian Williams"
+        role: "AP Microeconomics Teacher, Walter Payton College Prep"
+      - name: "Mr. Aaron Weiss"
+        role: "AP US History Teacher, Walter Payton College Prep"
+      - name: "Ms. Abby Imrem"
+        role: "AP French Teacher, Walter Payton College Prep"
+      - name: "Mr. Michael Baldwin"
+        role: "AP Human Geography Teacher, Walter Payton, College Prep"
 
-groups: []
+  - heading: "Musical Instructors"
+    people:
+      - name: "Mr. Matthew Sheppard"
+        role: "Artistic Director of Elgin Youth Symphony Orchestras"
+      - name: "Mr. Aaron Kaplan"
+        role: "Conductor of EYSO Philharmonia Orchestra, Conductor of Uptown Musical Theatre Company"
+      - name: "Ms. Emily Mather"
+        role: "Director of Western Springs School of Talent Education, Director of *Allegro!!!* and *Chicago Consort* Violin Ensembles"
+      - name: "Mr. Edward Kreitman"
+        role: "Former Director of Western Springs School of Talent Education and *Allegro!!!* Violin Ensemble"
+      - name: "Mr. Ryan Caparella"
+        role: "Private Violin Instructor since 2017"
+      - name: "Ms. Rachel Finnes"
+        role: "Private Piano Instructor for three years"
+      - name: "Guru Prasanna Ramaswami"
+        role: "Private Composition Instructor"
+      - name: "Guru Uma Maheshwari"
+        role: "Private Carnatic Vocal Instructor for nine years"

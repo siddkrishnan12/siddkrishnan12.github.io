@@ -20,7 +20,7 @@
   show: false
 - title: "Acknowledgements"
   url: "/acknowledgements/"
-  show: false
+  show: true
 - title: "Resume"
   url: "/resume/"
   show: false
